@@ -1,0 +1,10 @@
+*{
+    --bg-color: rgba(186, 211, 236, 0.966);
+    --font-color: #280ba8;
+}
+
+body{
+    background: var(--bg-color);
+    color: var(--font-color);
+    padding: 20px 0px;
+}

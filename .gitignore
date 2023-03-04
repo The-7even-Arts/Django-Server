@@ -1,0 +1,4 @@
+# Use GitIgnore file to exclude files and folders during git commit process.
+
+env
+plugins/assets
