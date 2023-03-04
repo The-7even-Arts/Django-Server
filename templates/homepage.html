@@ -16,6 +16,11 @@
         <span></span>
     </div>
 </div>
+
+<div class="row">
+    <div class="d-flex justify-content-end"> <span class="small alert alert-info">Device IP: {{user_ip}} </span></div>
+</div>
+
 <div class="row mt-4">
     {% if articles %}
         {% for article in articles %}
@@ -43,7 +48,7 @@
 {% block extraScripts %}
 <script>
     function vibrate(){
-        window.navigator.vibrate(1200);
+        window.navigator.vibrate(600);
     }
 </script>
 {% endblock %}
