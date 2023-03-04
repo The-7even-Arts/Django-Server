@@ -9,7 +9,31 @@ body{
     padding: 20px 0px;
     padding-bottom: 20px;
 }
-
+.nav-top{
+    min-height: 50px;
+    padding: 10px;
+    align-content: center;
+    justify-content: center;
+    transform: scaleZ(190px);
+    position: sticky-top;
+}
+.nav-top h4{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.nav-top span{
+    display: flex;
+    margin: 5px;
+    border: 2px solid;
+}
+.nav-top span:nth-child(even){
+    top: 0;
+    border-color: rgb(25, 0, 255);
+}
+.nav-top span:nth-child(odd){
+    bottom: 0;
+    border-color: red;
+    transform:rotate(45px);
+}
 .card{
     border: 0.5px solid rgba(231, 230, 224, 0.87);
     color:rgb(255, 255, 255);

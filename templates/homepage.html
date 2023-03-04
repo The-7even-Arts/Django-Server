@@ -2,21 +2,24 @@
 
 {% block extraStyles %}
 <style>
-    
 </style>
 {% endblock %}
 
 
 {% block content %}
 <div class="row">
-    <div class="col-md-6 mx-auto text-center shadow">
+    <div class="col-md-6 mx-auto text-center shadow nav-top btn" onclick="vibrate()">
+        <span></span>
+        <span></span>
         <h4>Tek Solutions</h4>
+        <span></span>
+        <span></span>
     </div>
 </div>
 <div class="row mt-4">
     {% if articles %}
         {% for article in articles %}
-            <div class="col-10 mx-auto col-md-5 mx-md-0">
+            <div class="col-12 mx-auto col-md-5 mx-md-0">
                 <div class="card">
                     <div class="card-img text-center" style="background-image: url('{{article.image.url}}');">
                         <img class="article_image" height="150px" src="{{article.image.url}}" alt="" srcset="{{article.image.url}}" hidden>
@@ -38,5 +41,9 @@
 {% endblock %}
 
 {% block extraScripts %}
-
+<script>
+    function vibrate(){
+        window.navigator.vibrate(1200);
+    }
+</script>
 {% endblock %}
